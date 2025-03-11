@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, #7588ff, #8c75ff);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+.container {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+h1 {
+    font-size: 50px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.balloons {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.balloon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    animation: float 5s linear infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #e6005c;
+}
+.rotating-img {
+    width: 250px;  /* Aumenta el tamaño de la imagen a 3 veces su tamaño original */
+    height: 250px; /* Aumenta el tamaño de la imagen a 3 veces su tamaño original */
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    top: 100%;  /* Posiciona las imágenes debajo del botón */
+    left: 50%;
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+    <audio id="musica" loop>
+        <source src="Bailalo Rocky.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+
+    <div class="container">
+        <p>(Cliquea la pantalla👆)</p>
+        <h1>🎉 ¡Feliz Cumpleaños! Karen 🎂</h1>
+        <p>149cm de bendiciones para este 11 de Marzo😁</p>
+        <button class="button" onclick="startGame()">Iniciar Adivinanza</button>
+        <br>
+        <img id="rotatingImage1" class="rotating-img" src="1.webp" alt="Imagen 1">
+        <img id="rotatingImage2" class="rotating-img" src="2.png" alt="Imagen 2" style="display: none;"> <!-- Imagen 2 inicialmente oculta -->
+    </div>
+
+    <div class="balloons"></div>
+    <script src="script1.js"></script>
+   
+</body>
+</html>
